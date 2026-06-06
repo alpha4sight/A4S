@@ -348,8 +348,8 @@ const LEVEL_COLORS = {
 };
 
 const SC_DATA = {
-  '2.1': {
-    num: 'SC 2.1',
+  '6.1': {
+    num: 'SC 6.1',
     title: 'Coordination des efforts',
     sub: 'Entraide',
     questions: [
@@ -402,8 +402,8 @@ const SC_DATA = {
       }
     ]
   },
-  '2.2': {
-    num: 'SC 2.2',
+  '6.2': {
+    num: 'SC 6.2',
     title: 'Gestion du dialogue constructif',
     sub: 'Interface',
     questions: [
@@ -456,8 +456,8 @@ const SC_DATA = {
       }
     ]
   },
-  '2.3': {
-    num: 'SC 2.3',
+  '6.3': {
+    num: 'SC 6.3',
     title: 'Inclusion et mise en commun',
     sub: 'Synergie',
     questions: [
@@ -622,7 +622,7 @@ function sendEmail(score5, level, data, levelData, colors) {
   const answersText = answers.map((a, i) => `Q${i + 1}: ${a}/6`).join(' | ');
   const params = {
     to_email: userEmail,
-    bcc_email: 'bruno.cepparo@alpha4sight.ch',
+    bcc_email: 'debrief@alpha4sight.ch',
     sc_num: data.num,
     sc_title: data.title,
     score: score5.toFixed(1),
