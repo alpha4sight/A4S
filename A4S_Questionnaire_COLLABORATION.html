@@ -405,7 +405,7 @@ function showResults() {
   for (var i = 0; i < answers.length; i++) sum += answers[i];
   var avg6 = sum / answers.length;
   var sc5  = Math.round((avg6 - 1) * 10) / 10;
-  var lvl  = avg6 < 2.5 ? 1 : avg6 < 3.5 ? 2 : avg6 < 4.5 ? 3 : 4;
+  var lvl  = avg6 < 2.27 ? 1 : avg6 < 3.5 ? 2 : avg6 < 4.75 ? 3 : 4;
   var ld   = sc.levels[lvl];
 
   document.getElementById("res-sc").textContent    = sc.num + " — " + sc.theme;
